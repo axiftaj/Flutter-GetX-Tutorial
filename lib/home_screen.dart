@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
@@ -81,6 +82,55 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               title: Text('Get Dialaog Alert'),
               subtitle: Text('Get Dialog alert example'),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              onTap: (){
+
+                Get.bottomSheet(
+                  Container(
+                    decoration: BoxDecoration(
+
+                      borderRadius: BorderRadius.only(
+                        topLeft: Radius.circular(30)
+                      )
+                    ),
+                    child: Column(
+                      children: [
+                        ListTile(
+                          onTap: (){
+                            Get.changeTheme( ThemeData.light());
+                          },
+                          leading: Icon(Icons.light_mode),
+                          title: Text('Light mode'),
+                          subtitle: Text('Light mode'),
+                        ),
+                        ListTile(
+                          onTap: (){
+                            Get.changeTheme( ThemeData.dark());
+                          },
+                          leading: Icon(Icons.dark_mode),
+                          title: Text('Dark mode'),
+                          subtitle: Text('Dark mode'),
+                        )
+                      ],
+                    ),
+                  ) ,
+                  elevation: 1 ,
+                );
+              },
+              title: Text('Get Bottom Sheet'),
+              subtitle: Text('How to change Light and Dark Mode with GetX'),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              onTap: (){
+               GetUtils.isEmail('axiftaj@gmail.com').printError(info: 'error');
+              },
+              title: Text('GetX Utils'),
+              subtitle: const Text('Getx Utilities'),
             ),
           ),
 
