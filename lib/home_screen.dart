@@ -41,6 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Card(
             child: ListTile(
               onTap: (){
+
                 Get.defaultDialog(
                   titlePadding: EdgeInsets.only(top: 20),
                   title: 'Delete Chat' ,
