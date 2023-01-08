@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:getx/getx_routes/screen_one.dart';
+import 'package:getx/getx_routes/screen_two.dart';
 import 'package:getx/home_screen.dart';
 
 void main() {
@@ -18,6 +20,11 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: const HomeScreen(),
+      getPages: [
+        GetPage(name: '/', page: () => HomeScreen()),
+        GetPage(name: '/screen1', page: () => ScreenOne(name: '')),
+        GetPage(name: '/screen2', page: () => ScreenTwo()),
+      ],
     );
   }
 }
