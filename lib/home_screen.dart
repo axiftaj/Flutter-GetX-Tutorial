@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Card(
             child: ListTile(
               onTap: (){
-                Get.to(GetXUtilScreen());
+                Get.to(const GetXUtilScreen());
               },
               title: const Text('GetX Utils'),
               subtitle: const Text('Getx Utils with source code like, snackbar, dialog alert, bottom nav bar, change app theme'),
@@ -35,7 +35,7 @@ class _HomeScreenState extends State<HomeScreen> {
           Card(
             child: ListTile(
               onTap: (){
-                Get.to(GetXRoutesScreen());
+                Get.to(const GetXRoutesScreen());
               },
               title: const Text('GetX Routes'),
               subtitle: const Text('GetX Routes with source code '),

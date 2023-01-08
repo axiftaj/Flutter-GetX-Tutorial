@@ -87,8 +87,7 @@ class _GetXUtilScreenState extends State<GetXUtilScreen> {
 
                 Get.bottomSheet(
                   Container(
-                    decoration: BoxDecoration(
-
+                    decoration:  const BoxDecoration(
                         borderRadius: BorderRadius.only(
                             topLeft: Radius.circular(30)
                         )
@@ -99,17 +98,17 @@ class _GetXUtilScreenState extends State<GetXUtilScreen> {
                           onTap: (){
                             Get.changeTheme( ThemeData.light());
                           },
-                          leading: Icon(Icons.light_mode),
-                          title: Text('Light mode'),
-                          subtitle: Text('Light mode'),
+                          leading: const Icon(Icons.light_mode),
+                          title: const Text('Light mode'),
+                          subtitle: const Text('Light mode'),
                         ),
                         ListTile(
                           onTap: (){
                             Get.changeTheme( ThemeData.dark());
                           },
-                          leading: Icon(Icons.dark_mode),
-                          title: Text('Dark mode'),
-                          subtitle: Text('Dark mode'),
+                          leading: const Icon(Icons.dark_mode),
+                          title: const Text('Dark mode'),
+                          subtitle: const Text('Dark mode'),
                         )
                       ],
                     ),
@@ -117,8 +116,8 @@ class _GetXUtilScreenState extends State<GetXUtilScreen> {
                   elevation: 1 ,
                 );
               },
-              title: Text('Get Bottom Sheet'),
-              subtitle: Text('How to change Light and Dark Mode with GetX'),
+              title: const Text('Get Bottom Sheet'),
+              subtitle: const Text('How to change Light and Dark Mode with GetX'),
             ),
           ),
           Card(
@@ -126,7 +125,7 @@ class _GetXUtilScreenState extends State<GetXUtilScreen> {
               onTap: (){
                 GetUtils.isEmail('axiftaj@gmail.com').printError(info: 'error');
               },
-              title: Text('GetX Utils'),
+              title: const Text('GetX Utils'),
               subtitle: const Text('Getx Utilities'),
             ),
           ),
