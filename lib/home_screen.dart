@@ -31,7 +31,6 @@ class _HomeScreenState extends State<HomeScreen> {
               subtitle: const Text('Getx Utils with source code like, snackbar, dialog alert, bottom nav bar, change app theme'),
             ),
           ),
-
           Card(
             child: ListTile(
               onTap: (){
@@ -41,6 +40,8 @@ class _HomeScreenState extends State<HomeScreen> {
               subtitle: const Text('GetX Routes with source code '),
             ),
           ),
+
+
 
         ],
       ),
