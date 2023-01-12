@@ -5,6 +5,8 @@ import 'package:get/get.dart';
 import 'package:getx/getx_routes/getx_routes_screen.dart';
 import 'package:getx/getx_utils/getx_utils_screen.dart';
 
+import 'getx_localization/get_localization_screen.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -38,6 +40,15 @@ class _HomeScreenState extends State<HomeScreen> {
               },
               title: const Text('GetX Routes'),
               subtitle: const Text('GetX Routes with source code '),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              onTap: (){
+                Get.to(const GetXLocalizationScreen());
+              },
+              title: const Text('GetX Localization'),
+              subtitle: const Text('Change language of the app using GetX'),
             ),
           ),
 
