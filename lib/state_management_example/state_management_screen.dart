@@ -6,6 +6,8 @@ import 'package:get/get.dart';
 import 'package:getx/state_management_example/counter_screen.dart';
 import 'package:getx/state_management_example/example_two.dart';
 
+import 'favourite_screen.dart';
+
 class StateManagementScreen extends StatefulWidget {
   const StateManagementScreen({Key? key}) : super(key: key);
 
@@ -17,6 +19,9 @@ class _StateManagementScreenState extends State<StateManagementScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: Text('GetX State Management Example'),
+      ),
       body: ListView(
         children: [
           Card(
@@ -37,6 +42,16 @@ class _StateManagementScreenState extends State<StateManagementScreen> {
               subtitle: const Text('Example two to understand the Getx a bit more in detail'),
             ),
           ),
+          Card(
+            child: ListTile(
+              onTap: (){
+                Get.to(const FavouriteScreen());
+              },
+              title: const Text('Favourite App'),
+              subtitle: const Text('How to make favourite from lists of fruits'),
+            ),
+          ),
+
         ],
       ),
     );
