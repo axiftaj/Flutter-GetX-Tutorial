@@ -15,6 +15,7 @@ class _ExampleOneScreenState extends State<ExampleOneScreen> {
 
   final ExampleOneController controller = Get.put(ExampleOneController());
 
+
   @override
   Widget build(BuildContext context) {
     print('value');
