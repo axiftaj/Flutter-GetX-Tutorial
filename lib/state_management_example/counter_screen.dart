@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../controllers/example_controller.dart';
+import '../controllers/counter_example.dart';
 
 
-class ExampleOneScreen extends StatefulWidget {
-  const ExampleOneScreen({Key? key}) : super(key: key);
+class CounterScreen extends StatefulWidget {
+  const CounterScreen({Key? key}) : super(key: key);
 
   @override
-  State<ExampleOneScreen> createState() => _ExampleOneScreenState();
+  State<CounterScreen> createState() => _CounterScreenState();
 }
 
-class _ExampleOneScreenState extends State<ExampleOneScreen> {
+class _CounterScreenState extends State<CounterScreen> {
 
-  final ExampleOneController controller = Get.put(ExampleOneController());
+  final CounterController controller = Get.put(CounterController());
 
 
   @override
