@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/getx_routes/getx_routes_screen.dart';
 import 'package:getx/getx_utils/getx_utils_screen.dart';
+import 'package:getx/state_management_example/exmple_one_screen.dart';
 
 import 'getx_localization/get_localization_screen.dart';
 
@@ -52,8 +53,15 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
           ),
 
-
-
+          Card(
+            child: ListTile(
+              onTap: (){
+                Get.to(const ExampleOneScreen());
+              },
+              title: const Text('GetX State Manamgement'),
+              subtitle: const Text('Change language of the app using GetX'),
+            ),
+          ),
         ],
       ),
       floatingActionButton: FloatingActionButton(onPressed: (){
