@@ -1,10 +1,8 @@
-
-
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:getx/state_management_example/counter_screen.dart';
 import 'package:getx/state_management_example/example_two.dart';
+import 'package:getx/state_management_example/image_picker_screen.dart';
 
 import 'favourite_screen.dart';
 
@@ -49,6 +47,15 @@ class _StateManagementScreenState extends State<StateManagementScreen> {
               },
               title: const Text('Favourite App'),
               subtitle: const Text('How to make favourite from lists of fruits'),
+            ),
+          ),
+          Card(
+            child: ListTile(
+              onTap: (){
+                Get.to(const ImagePickerScreen());
+              },
+              title: const Text('GetX Image Picker'),
+              subtitle: const Text('How to pick image with Getx'),
             ),
           ),
 
