@@ -30,7 +30,7 @@ class _ImagePickerScreenState extends State<ImagePickerScreen> {
           children: [
             Center(
               child: CircleAvatar(
-                radius: 100,
+                radius: 10,
                 backgroundColor: Colors.grey,
                 backgroundImage: controller.selectedImagePath.isNotEmpty
                     ? FileImage( File(controller.selectedImagePath.toString()))

@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:getx/state_management_example/counter_screen.dart';
 import 'package:getx/state_management_example/example_two.dart';
 import 'package:getx/state_management_example/image_picker_screen.dart';
+import 'package:getx/state_management_example/login_screen.dart';
 
 import 'favourite_screen.dart';
 
@@ -59,6 +60,15 @@ class _StateManagementScreenState extends State<StateManagementScreen> {
             ),
           ),
 
+          Card(
+            child: ListTile(
+              onTap: (){
+                Get.to(const LoginScreen());
+              },
+              title: const Text('Login API with GetX'),
+              subtitle: const Text('How to login with Rest API using GetX'),
+            ),
+          ),
         ],
       ),
     );
